@@ -6,10 +6,10 @@ using namespace std;
 
 int main(){
 
-    cout << "¾ÆÀÌÀ¯" << endl;
-    cout << iu::aout << " " << iu::bout << " " << iu::cout << endl;
+    cout << "ì•„ì´ìœ " << endl;
+    cout << iu::a << " " << iu::bout << " " << iu::cout << endl;
 
-    cout << "¹Úº¸°Ë" <<endl;
+    cout << "ë³´ê²€" <<endl;
     cout << bo::a << endl;
 
     return 0;

@@ -7,7 +7,7 @@ int main(){
 
     char ch;
     int count_alpha = 0, count_digit = 0, count_alnum = 0;
-    cout << "ÀÚÀ¯·Ó°Ô ÀÛ¼º!(^Z Á¾·á) : " << endl;
+    cout << "ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ ï¿½Û¼ï¿½!(^Z ï¿½ï¿½ï¿½ï¿½) : " << endl;
 
     while(cin >> noskipws >> ch){
         if(isalpha(ch)){
@@ -21,8 +21,8 @@ int main(){
         cout << (char)toupper(ch);
     }
 
-    cout << "¾ËÆÄºª °³¼ö = " << count_alpha << endl;
-    cout << "¼ýÀÚ °³¼ö = " << count_digit << endl;
-    cout << "¾ËÆÄºª or ¼ýÀÚ °³¼ö = " << count_alnum << endl;
+    cout << "ï¿½ï¿½ï¿½Äºï¿½ ï¿½ï¿½ï¿½ï¿½ = " << count_alpha << endl;
+    cout << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ = " << count_digit << endl;
+    cout << "ï¿½ï¿½ï¿½Äºï¿½ or ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ = " << count_alnum << endl;
 
 }
