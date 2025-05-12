@@ -1,0 +1,18 @@
+#%% 문제 직종별 education과 income에 대해 버블차트 작성
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.set_theme(rc={'figure.figsize':(7,7)})
+
+pre = pd.read_csv(r"C:\Users\user\Desktop\donga\donga4_1\bigdata\dfdata\prestige.csv")
+
+sns.scatterplot(data = pre, x="education", y= "income",
+                size = "women", sizes = (20,4000),
+                hue = "type", legend = True)
+
+for i in range(0, pre.shape[0]):
+    plt.text(x=pre.education[i], y = pre.income[i], s = pre.job[i],
+             horizontalalignment = "center", size = "small", color = "dimgray")
+
+plt.show()
