@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iomanip>
 #include <algorithm>
+#include <cassert>
 
 using namespace std;
 
@@ -9,6 +10,7 @@ int main(){
 
     ifstream fin("scores.txt");
     ofstream fout("result.txt");
+    assert(fin && fout); // 개발자 디버깅용
     if(!fin || !fout){
         cout << "파일없음" << endl;
         return 0;
