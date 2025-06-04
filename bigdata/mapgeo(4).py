@@ -53,12 +53,13 @@ districts=[
     
 population_data={d["name"]:d["population"] for d in districts}
 
-geo_busan=json.load(open(r"C:\Users\user\Desktop\donga\donga4_1\bigdata\dfdata\sigoo.geojson",encoding='UTF-8'))
+geo_busan = json.load(open(r"C:\Users\Admin\Desktop\donga\donga4_1\bigdata\dfdata\sigoo.geojson", encoding='UTF-8'))
+
 feature=[x for x in geo_busan['features'] if x['properties']['SIG_CD'].startswith('26')]
 geo_busan['features']=feature
 
 
-df_pop=pd.read_csv(r"C:\Users\user\Desktop\donga\donga4_1\bigdata\dfdata\Population_SIG.csv")
+df_pop=pd.read_csv(r"C:\Users\Admin\Desktop\donga\donga4_1\bigdata\dfdata\Population_SIG.csv")
 df_pop.info()
 
 df_pop['code']=df_pop['code'].astype(str)
@@ -66,7 +67,7 @@ pcode_df=df_pop.query('code.str.startswith("26")')
 
 
 
-pusan_pop=pd.read_csv(r"C:\Users\user\Desktop\donga\donga4_1\bigdata\dfdata\pusan_pop(1).csv",encoding='euc-kr')
+pusan_pop=pd.read_csv(r"C:\Users\Admin\Desktop\donga\donga4_1\bigdata\dfdata\pusan_pop(1).csv",encoding='euc-kr')
 
 pcode_df.drop(['pop'],axis=1,inplace=True)
 
