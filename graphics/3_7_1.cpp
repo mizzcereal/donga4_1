@@ -1,3 +1,5 @@
+// 3_7_1 원뿔그리기
+
 #include <GL/glut.h>
 #include <iostream>
 #include <cmath>
@@ -70,7 +72,7 @@ void RenderScene(void) {
     glTranslatef(xTran, 0.0f, 0.0f);
     glTranslatef(0.0f, yTran, 0.0f);
 
-    // 3_7_a 폴리곤 그리기
+
     GLint i = 0;
 
     glBegin(GL_TRIANGLE_FAN);
